@@ -17,27 +17,6 @@ The business was consistently acquiring new customers but lacked clarity on Whet
 * Clear grain separation (user-level vs cohort-level)
 * No cohort logic or joins in the BI layer
 
-## **Data Architecture**
-### **Data Source**
-* **BigQuery Public Dataset:** `bigquery-public-data.thelook_ecommerce`
-
-### **dbt Model Layers**
-```
-staging/       → cleaned raw tables  
-intermediate/  → cohort anchoring & lifecycle logic  
-marts/         → cohort-level, BI-ready tables  
-```
-
-## **Key Mart Tables**
-* **`cohort_acquisition_metrics`** – New customers & first-order AOV
-* **`cohort_revenue_monthly`** – Revenue retention curves
-* **`cohort_repeat_metrics`** – Repeat rate & time to 2nd purchase
-* **`cohort_ltv`** – 6-month customer LTV
-* **`cohort_revenue_new_vs_returning`** – Revenue composition
-* **`cohort_category_expansion`** – Cross-category purchasing behavior
-* **`cohort_ops_metrics`** – Delivery time & return rate
-* **`cohort_ltv_by_dc`** – LTV by distribution center
-
 ## **Dashboard Structure**
 The dashboard follows a **top-down business narrative**
 

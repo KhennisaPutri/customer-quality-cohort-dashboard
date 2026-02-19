@@ -24,5 +24,5 @@ The dashboard follows a **top-down business narrative**
 * Return rate
 * LTV by distribution center
 
-###*Dashboard Link*
+### **Dashboard Link**
 *https://lookerstudio.google.com/reporting/ec85dce2-43b8-495c-917c-9dd959f164b1*
